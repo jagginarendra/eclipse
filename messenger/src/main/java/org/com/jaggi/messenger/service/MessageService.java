@@ -16,7 +16,7 @@ public class MessageService {
 	
 	public MessageService(){
 		
-		//System.out.println("Default constructor");
+		System.out.println("Default constructor");
 		messages.put(1, new Message(1, new Date(), "This is Message1", "Jaggi"));
 		messages.put(2, new Message(2, new Date(), "This is Message2", "Ashwin"));
 		messages.put(3, new Message(3, new Date(), "This is Message3", "Akash"));
@@ -56,7 +56,7 @@ public class MessageService {
 	
 	
 	public Message getMessage(int id){
-		//System.out.println(" get called");
+		System.out.println(" get called here");
 		return messages.get(id);
 	}
 	
