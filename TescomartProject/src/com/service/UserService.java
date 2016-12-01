@@ -12,13 +12,17 @@ public class UserService {
 
 	public User getUserById(int id) {
 
-		return null;
+		UserDAO userDao = new UserDAO();
+
+		return userDao.getUserById(id);
 
 	}
 
 	public List<User> getAllUser() {
 
-		return null;
+		UserDAO userDao = new UserDAO();
+
+		return userDao.getAllUsers();
 	}
 
 	public List<User> getUserByIdInRange(int startId, int endId) {
@@ -33,4 +37,15 @@ public class UserService {
 		return userDao.addUser(firstName, lastName, userId);
 
 	}
+	
+	
+	public User updateUser(String firstName , String lastName , int userId){
+	
+		UserDAO userDao = new UserDAO();
+		return userDao.updateUser(firstName, lastName, userId);
+		
+		
+	}
+	
+	
 }
